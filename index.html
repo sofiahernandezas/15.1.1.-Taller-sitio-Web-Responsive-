@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem ipsum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary"> <!--navbar-expand-lg hace que la barra se expanda en pantallas grandes-->
+        <div class="container-fluid"> <!--Crea un contenedor que ocupa todo el ancho de la pantalla-->
+            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--Este botón de menú hamburguesa se muestra en pantallas pequeñas, para colapsa/expande el menú.-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav"> <!--define la zona que se colapsará (u ocultará) para pantallas pequeñas-->
+                <form id="search" class="d-flex me-3 d-lg-none" role="search"> <!--el formulario de búsqueda se presenta de manera flexible. d-lg-none oculta el formulario en pantallas grandes.-->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amet</a>
+                    </li>
+                    <!-- Dropdown visible solo en SM y MD -->
+                    <li class="nav-item dropdown d-block d-lg-none"> <!--dropdown "Opciones" visible solo en pantallas pequeñas. d-lg-none lo oculta en pantallas grandes-->
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownOptions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownOptions">
+                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--  Este formulario es visible solo en pantallas grandes. -->
+                <form id="search" class="d-flex d-none d-lg-block" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container text-center mt-5">
+            <div id="titles" class="row justify-content-center">
+                <div class="col-md-6 col-lg-6"> <!--contenedor destinado a ser parte de un sistema de rejilla.class="col-md-6": Esta clase indica que, en dispositivos medianos (pantallas con un ancho de 768px o más), este contenedor ocupará 6 de las 12 columnas disponibles en Bootstrap. col-lg-6: Similar a la clase anterior, pero se aplica a dispositivos grandes-->
+
+                 <h2>Lorem ipsum....</h2>
+
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 text-center">
+                        <h5 class="text-item"></h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+       
+         <!-- Sección de opciones visible solo en LG -->
+        <div class="row">
+       
+            <div id="options" class="col-lg-3 d-none d-lg-block"> <!--la columna para opciones: Ocupa 3 columnas en pantallas grandes y está oculta en pantallas más pequeñas.-->
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Opcion 1</a></li>
+                    <li class="list-group-item"><a href="#">Opcion 2</a></li>
+                    <li class="list-group-item"><a href="#">Opcion 3</a></li>
+                    <li class="list-group-item"><a href="#">Opcion 4</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col"> <!--Ocupa el espacio restante.-->
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque tristique turpis, id vulputate nisi eleifend sed. Donec eu feugiat ligula. Curabitur eu lorem cursus, maximus felis nec, condimentum lacus. Curabitur accumsan diam neque, vel accumsan mi aliquam ut. Praesent dignissim sit amet metus a accumsan. Proin vel sodales magna. Ut semper orci accumsan, aliquet ipsum non, consequat ligula. Donec suscipit, libero a porta finibus, risus est dignissim neque, quis mollis sem urna eu ligula. Curabitur gravida diam ac pellentesque facilisis. Duis aliquet ipsum in ipsum dignissim dapibus. Vivamus no mi augurio.</p>
+            <p>Donec imperdiet ultrices tellus, tempor pellentesque est gravida in. Vestibulum convallis orci sed finibus varius. Cras maximus, diam et sollicitudin tincidunt, velit risus consectetur urna, sit amet scelerisque elit quam nec quam. Aenean eu pellentesque lectus, in sagittis quam. Proin at lorem posuere nulla venenatis vulputate eget id erat. Pellentesque rutrum eget velit sed fermentum. Aliquam id tristique dui. Nulla pellentesque dolor nec purus consequat, sit amet sollicitudin leo tristique. Cras eget luctus leo. Etiam tincidunt sagittis nibh, vitae interdum mauris fermentum vitae. Pellantesque sed purus lorem.</p>
+            <p>Pellentesque id tincidunt nisl, non vestibulum leo. Morbi suscipit vestibulum libero, ac auctor dui malesuada sed. Interdum et malesuada famas ac ante ipsum primis in faucibus. In hac habitasse platea dictamen. Entero finibus lectus en ultricies suscipit. Phasellus lobortis posuere accumsan. Etiam pharetra lorem en eros lobortis fringilla. Aliquam suscipit odio lacinia nibh blandit, et congue mi tincidunt. Nulla scelerisque nulla in enim facilisis, ornare iaculis lectus pulvinar.</p>
+            <p>Nam dignissim ullamcorper est pretium placerat. Nam porta enim eget rutrum vulputate. Donec gravida aliquet placerat. Suspendisse nulla elit, elementum ut semper a, consectetur sed tortor. Ut luctus turpis non est mollis, luctus dignissim leo rhoncus. Nam in lobortis augue. Nullam ac mi erat. Praesent consequat justo justo. Mauris facilisis augura un faucibus luctus. Vestibulum nulla nisl, euismod non lacinia vitae, iaculis a metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sit amet libero vel purus dignissim pharetra.</p>
+            <p>Suspendisse ut consectetur ligula. Praesent id ligula ut metus rutrum egetas quis eget velit. Pellentesque vel faucibus erat. Entero tiempo tortor id velit elementum facilisis. In hac habitasse platea dictamen. Ut in dolor id arcu vulputate imperdiet a nec dolor. Proin lobortis pulvinar odio eget semper. Sed condimentum mauris lacinia ante laoreet scelerisque. Nulla ornare tellus non aliquam vehicula. Proin dui urna, tempus nec metus ac, porttitor blandit odio. Pellentesque condimentum, massa pellentesque laoreet maximus, nibh urna viverra turpis, auctor lectus risus non ex.</p><
+            </div>  
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

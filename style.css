@@ -1,0 +1,43 @@
+#options ul.list-group {
+    padding-left: 0; /* Elimina el padding por defecto del UL */
+    list-style: none; /* Elimina las viñetas de la lista */
+}
+
+#options ul.list-group .list-group-item {
+    text-align: left; /* Asegura que los elementos de la lista estén alineados a la izquierda */
+    padding-left: 15px; /* Añade espacio a la izquierda para los elementos */
+}
+
+#options ul.list-group a {
+    color: inherit; /* Para que el color del texto se herede y no sea azul */
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+    padding: 10px 15px; /* Ajusta el padding para controlar el espacio alrededor del texto */
+}
+
+#carouselExample {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+  
+.text-item {
+    font-size: 1.5em;
+    color: black;
+}
+
+main p {
+    text-align: justify;
+    text-justify: inter-word;
+    column-count: 1; /* Por defecto, una columna para SM */
+}
+
+@media (min-width: 768px) {
+    main p {
+        column-count: 2; /* Dos columnas para pantallas medianas (MD) */
+    }
+}
+
+@media (min-width: 992px) {
+    main p {
+        column-count: 3; /* Tres columnas para pantallas grandes (LG) */
+    }
+}
